@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🧠 ORITSO Assignment – Task Manager Frontend
+
+This project is the **frontend** of the ORITSO Task Manager, built using **React.js**. It connects to a Node.js + Express backend to manage tasks (Create, Read, Update, Delete).
+
+---
+
+## 🚀 Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 📦 Installation
 
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/Surya413413/ORITSO-Assignment-task-manager-frontend.git
+cd ORITSO-Assignment-task-manager-frontend
+npm install
+
+### Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+npm start
+Runs the app in development mode.
+Open http://localhost:3000 in your browser.
+The page will reload when you make edits.
+You will also see lint errors (if any) in the console.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm run build
+Builds the app for production in the build folder.
+It bundles React in production mode and optimizes the build for performance.
+The build is minified and filenames include content hashes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm test
+Launches the test runner in interactive watch mode.
+(You can skip this if you’re not using tests.)
 
-### `npm run eject`
+npm run eject (Optional)
+Note: This is a one-way operation. Once you eject, you can't go back!
+It exposes all configurations (webpack, Babel, ESLint) if you want full control.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###  Folder Structure
+src/
+├── components/
+│   ├── TaskForm.js     # Form for adding/editing tasks
+│   └── TaskList.js     # Displays all tasks
+├── App.js              # Main app component
+├── index.js            # React entry point
+├── App.css             # Global styles
+└── ...
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+API Integration
+This frontend connects to these endpoints from the backend:
+| Method | Endpoint         | Description       |
+| ------ | ---------------- | ----------------- |
+| GET    | `/api/tasks`     | Get all tasks     |
+| POST   | `/api/tasks`     | Create a new task |
+| PUT    | `/api/tasks/:id` | Update a task     |
+| DELETE | `/api/tasks/:id` | Delete a task     |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sample Task Object
+{
+  "title": "Finish Assignment",
+  "description": "Complete frontend task manager",
+  "dueDate": "2025-05-15",
+  "status": "pending"
+}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Screenshots
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/6a98812c-6105-49e5-ad29-220b8ba71ece" />
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+**Deployment**
+To deploy on Vercel or Netlify:
+Push code to GitHub.
+Connect your repo on Vercel/Netlify.
+Set the environment variable REACT_APP_API_URL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deploy. 🎉
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
