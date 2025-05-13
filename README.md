@@ -13,8 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/Surya413413/ORITSO-Assignment-task-manager-frontend.git
-cd ORITSO-Assignment-task-manager-frontend
+git clone https://github.com/Surya413413/ORITSO-task-manager-frontend.git
+cd ORITSO-task-manager-frontend
 npm install
 
 ### Available Scripts
