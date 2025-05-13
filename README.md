@@ -1,14 +1,14 @@
-# 🧠 ORITSO Assignment – Task Manager Frontend
+#  ORITSO Assignment – Task Manager Frontend
 
 This project is the **frontend** of the ORITSO Task Manager, built using **React.js**. It connects to a Node.js + Express backend to manage tasks (Create, Read, Update, Delete).
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### 📦 Installation
+###  Installation
 
 Clone the repo and install dependencies:
 
@@ -80,5 +80,5 @@ Push code to GitHub.
 Connect your repo on Vercel/Netlify.
 Set the environment variable REACT_APP_API_URL.
 
-Deploy. 🎉
+Deploy. 
 
