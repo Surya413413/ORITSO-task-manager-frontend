@@ -1,0 +1,74 @@
+/* .task-list-container{
+   width: 30%;
+}
+
+.task-card-container{
+border:1px solid rgb(118, 134, 147);
+ width: 100%;
+ margin: 10px;
+ box-shadow: 0ch;
+ padding-left: 50px;
+ display: flex;
+ flex-direction: column;
+} */
+
+.task-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.task-card-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  justify-content: flex-start;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  font-weight: 500;
+}
+
+.edit-button {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.2);
+}
